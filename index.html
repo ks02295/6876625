@@ -160,9 +160,13 @@ document.getElementById("date&time").innerHTML = d;
   //Function to change the button color
   function changeColor() {
     //Generate a random color (hexadecimal)
-    var randomColor = "#" + Math.floor(Math.random()*19777215).toString(16);
+    var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
 
-    //
+    //Set the button's background color to the random color
+    button.style.backgroundColor = randomColor;
+  }
+  // Add a click event listener to the button 
+  button.addEventListener("click", changeColor);
 </script>
 </body>
 </html>
