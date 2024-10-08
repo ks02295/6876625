@@ -195,3 +195,28 @@ document.getElementById("date&time").innerHTML = d;
     </script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Number Generator</title>
+</head>
+<body>
+    <button id="generatorButton">Generate Random Number</button>button>
+    <p id="randomNumber"></p>
+
+    <script>
+        // Get a reference to the button and paragraph
+        var button = document.getElementById("generateButton");
+        var paragraph = document.getElementById("randomNumber");
+
+       // Function to generate and display a random number 
+      function generateRandomNumber() {
+          var randomNumber  = Math.floor(Math.random() * 10) +1;
+          paragraph.textContent = "RandomNumber: " + randomNumber;
+      }
+      // Add a click event listener to the button
+      button.addEventListener("click", generateRandomNumber);
+    </script>
+</body>
+</html>
