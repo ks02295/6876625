@@ -228,3 +228,23 @@ document.getElementById("date&time").innerHTML = d;
 </script>
 </head>
 <div id="chart_div"></div>
+<script type="text/javascript">
+        google.charts.load('current', {'packages' : ['corechart']}); 
+fuction drawChart() { 
+       var data = google.visualization.arrayToDataTable([
+              ['Task','Hours per Day'], 
+              ['Work', 8],
+              ['Sleep', 8], 
+              ['Eat', 2],
+              ['study', 4],
+              ['Exercise', 2]
+      });
+
+      var options = {
+              title: 'My Daily Activities'
+      }; 
+
+      var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+}
+</script>
