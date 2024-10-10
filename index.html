@@ -262,3 +262,48 @@ function drawChart() {
       chart.draw(data, options);
 }
 </script>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Population Bar Chart</title>
+    <!-- Include Google Charts API -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <!-- Create a div element to hold the chart -->
+    <div id="chart_div" style="width: 600px; height: 400px;"></div>
+
+    <script>
+        // Load the corechart package and set a callback function 
+        google.charts.load('current', {'packages':['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        // Callback function to draw the vertical bar chart 
+        function drawChart() {
+            // Create a DataTable with columns for city and population 
+            var data = new google.visualization.DataTable(); 
+            data.addColumn('string', 'City'); 
+            data.addColumn('number', 'Population');
+
+            // Add data for each city
+            data.addRows([
+                ['London',8673713],
+                ['Birmingham',1111307],
+                ['Edinburgh', 464990]
+            ]);
+
+            var options = { 
+                title: 'City Populations (Bar Chart)', 
+                hAxis: { title: 'Population' }, // X-axis label 
+                vAxis: { title: 'City' }, // Y-axis label
+                bars: 'vertical', // Display bars vertically
+                legend: 'none' // Hide legend
+            };
+
+            var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+            chart.draw(data,options);
+        }
+    </script>
+</body>
+</html>
