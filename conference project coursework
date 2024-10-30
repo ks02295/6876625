@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+</html>
+
+<head>
+  <head>
+ <img src="WebBanner2023.png" alt="Banner" width="1200" height="300">
+    <h1><b>ENGOO18 Computer Laboratory 2024/25</b></h1> 
+    <h2>Student URN 6876625</h2>
+<hr>
+<h2 style="font-family:calibri;"><b>Conference paper: How Will The Universe End?</b></h2>
+<hr>
+       <!style for tables>
+         <style>
+               table {
+                 font-family: arial, sans-serif;
+                 border-collapse: collapse;
+                 width: 30%;
+
+               }
+  
+               td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+               }
+
+               tr:nth-child(even) {
+                 background-colour: #dddddd;  
+               } 
+
+
+
+
+         </style>
+
+     <style>
+ p.exl {
+   margin-left:250px;
+ }
+ </style>
+   </head>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <style>
+ .mySlides {display:none;}
+ </style>
+ 
+  <body style="background-color:#FFFFFF;margin-left:5
+    <h3 id="Abstract">Abstract</h3> 
+
+<p class"ex1">
+<pre>
+-insert the text inbetween here-
+</pre>
+</p>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.myslides {display:none;}
+</style>
+   
+ <body style="background-color:#FFFFFF;margin-left:5
+   <h3 id="Introduction">Introduction</h3>
+
+<p class"ex1"> 
+<pre>
+-insert intro here-
+</pre>
+</p>
+  
+<!DOCTYPE html>
+<html>
+<head>
+   <title>MathML Example</title>
+</head>
+<body>
