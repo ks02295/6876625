@@ -1,0 +1,210 @@
+Table 1: data on cost and lifespan of bridge repairs 
+<table> 
+<tr>
+  <th>£ Cost of repairs</th>
+  <th>Lifespan of repairs (years)</th>
+</tr>
+<tr>
+  <td>0.7 m</td>
+  <td>2</td>
+</tr>
+<tr>
+  <td>3.3m</td>
+  <td>4</td>
+</tr>
+<tr>
+  <td>2.6 m</td>
+  <td>5</td>
+</tr>
+<tr>
+  <td>17.4 m</td>
+  <td>7</td>
+</tr>
+<tr>
+  <td>8.8 m</td>
+  <td>9</td>
+</tr>
+</table>
+
+<h3 id="references">References</h3>
+               
+<p>
+<pre>
+  -insert references in here- 
+</pre>
+               
+  </p>
+
+<p id="date&time"></p>
+
+<script>
+//Javascript to display the date and time on my webpage
+
+const d = new Date();
+document.getElementById("date&time").innerHTML = d;
+  
+</script>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change </title>
+</head>
+<body>
+  <button id="colorButton">Click me to change colour</button>
+<script>
+  //Get a reference to the button element
+  var button = document.getElementById("colorButton");
+
+  //Function to change the button color
+  function changeColor() {
+    //Generate a random color (hexadecimal)
+    var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+
+    //Set the button's background color to the random color
+    button.style.backgroundColor = randomColor;
+  }
+  // Add a click event listener to the button 
+  button.addEventListener("click", changeColor);
+</script>
+</body>
+</html>
+
+<DOCTYPE html>
+<html>
+<head>
+    <title>Alert Input Text</title>
+</head>
+<body>
+    <input type="text" id="textInput" placeholder="Enter text">
+    <button id="alertButton">Show Alert</button>
+    
+    <script>
+        // Get references tot the input field and button
+        var input = document.getElementById("textInput");
+        var button = document.getElementById("alertButton"); 
+
+        // Function to show an alert with the input text 
+         function showAlert() { 
+             var inputText = input.value;
+             alert("You entered: " + inputText);
+         }
+         // Add a click event listener to the button
+         button.addEventListener("click", showAlert);
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Number Generator</title>
+</head>
+<body>
+    <button id="generatorButton">Generate Random Number</button>
+    <p id="randomNumber"></p>
+
+    <script>
+        // Get a reference to the button and paragraph
+        var button = document.getElementById("generateButton");
+        var paragraph = document.getElementById("randomNumber");
+
+       // Function to generate and display a random number 
+      function generateRandomNumber() {
+          var randomNumber  = Math.floor(Math.random() * 10) +1;
+          paragraph.textContent = "RandomNumber: " + randomNumber;
+      }
+      // Add a click event listener to the button
+      button.addEventListener("click", generateRandomNumber);
+    </script>
+</body>
+</html>
+
+<head>
+<title>My Daily Activities</title>
+<script>type="text/javascript" src=https://www.gstatic.com/charts/loader.js></script>
+</head>
+<div id="chart_div"></div>
+<script type="text/javascript">
+        google.charts.load('current',{'packages':['corechart']}); 
+        google.charts.setOnLoadCallBack(drawChart);
+function drawChart() { 
+       var data = google.visualization.arrayToDataTable([
+              ['Task','Hours per Day'], 
+              ['Work', 8],
+              ['Sleep', 8], 
+              ['Eat', 2],
+              ['study', 4],
+              ['Exercise', 2]
+      ]);
+
+      var options = {
+              title: 'My Daily Activities'
+      }; 
+
+      var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+}
+</script>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Population Bar Chart</title>
+    <!-- Include Google Charts API -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <!-- Create a div element to hold the chart -->
+    <div id="chart_div" style="width: 600px; height: 400px;"></div>
+
+    <script>
+        // Load the corechart package and set a callback function 
+        google.charts.load('current', {'packages':['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        // Callback function to draw the vertical bar chart 
+        function drawChart() {
+            // Create a DataTable with columns for city and population 
+            var data = new google.visualization.DataTable(); 
+            data.addColumn('string', 'City'); 
+            data.addColumn('number', 'Population');
+
+            // Add data for each city
+            data.addRows([
+                ['London',8673713],
+                ['Birmingham',1111307],
+                ['Edinburgh', 464990]
+            ]);
+
+            var options = { 
+                title: 'City Populations (Bar Chart)', 
+                hAxis: { title: 'Population' }, // X-axis label 
+                vAxis: { title: 'City' }, // Y-axis label
+                bars: 'vertical', // Display bars vertically
+                legend: 'none' // Hide legend
+            };
+
+            var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+            chart.draw(data,options);
+        }
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Population Line Chart</title>
+    <!-- Include Google Charts API--> 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>   
+</head>
+<body> 
+    <!-- Create a div element to hold the chart -->
+    <div id="chart_div" style="width:1000px; height: 600px"></div>
+
+  <script>
+      
+  </script>
+</body>
+</html>
