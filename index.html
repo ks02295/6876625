@@ -109,5 +109,98 @@ sticking together gas, dust and stars together  while dark energy is involved in
 This will be further discussed throughout where we see how these two ideas have come to be, how we can detect dark matter and 
 energy and if there’s any technology we can use to strengthen the evidence around these two mysterious substances. 
 </pre>
-</p>
+</p><h3 id="references">References</h3>
+               
+<p>
+<pre>
+  -insert references in here- 
+</pre>
+               
+  </p>
+
+<p id="date&time"></p>
+
+<script>
+//Javascript to display the date and time on my webpage
+
+const d = new Date();
+document.getElementById("date&time").innerHTML = d;
+  
+</script>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change </title>
+</head>
+<body>
+  <button id="colorButton">Click me to change colour</button>
+<script>
+  //Get a reference to the button element
+  var button = document.getElementById("colorButton");
+
+  //Function to change the button color
+  function changeColor() {
+    //Generate a random color (hexadecimal)
+    var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+
+    //Set the button's background color to the random color
+    button.style.backgroundColor = randomColor;
+  }
+  // Add a click event listener to the button 
+  button.addEventListener("click", changeColor);
+</script>
+</body>
+</html>
+
+<DOCTYPE html>
+<html>
+<head>
+    <title>Alert Input Text</title>
+</head>
+<body>
+    <input type="text" id="textInput" placeholder="Enter text">
+    <button id="alertButton">Show Alert</button>
+    
+    <script>
+        // Get references tot the input field and button
+        var input = document.getElementById("textInput");
+        var button = document.getElementById("alertButton"); 
+
+        // Function to show an alert with the input text 
+         function showAlert() { 
+             var inputText = input.value;
+             alert("You entered: " + inputText);
+         }
+         // Add a click event listener to the button
+         button.addEventListener("click", showAlert);
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Number Generator</title>
+</head>
+<body>
+    <button id="generatorButton">Generate Random Number</button>
+    <p id="randomNumber"></p>
+
+    <script>
+        // Get a reference to the button and paragraph
+        var button = document.getElementById("generateButton");
+        var paragraph = document.getElementById("randomNumber");
+
+       // Function to generate and display a random number 
+      function generateRandomNumber() {
+          var randomNumber  = Math.floor(Math.random() * 10) +1;
+          paragraph.textContent = "RandomNumber: " + randomNumber;
+      }
+      // Add a click event listener to the button
+      button.addEventListener("click", generateRandomNumber);
+    </script>
+</body>
+</html>
+
   
