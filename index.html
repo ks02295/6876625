@@ -131,7 +131,7 @@ document.getElementById("date&time").innerHTML = d;
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Change </title>
+  <title>Change Button Colour</title>
 </head>
 <body>
   <button id="colorButton">Click me to change colour</button>
@@ -142,7 +142,7 @@ document.getElementById("date&time").innerHTML = d;
   //Function to change the button color
   function changeColor() {
     //Generate a random color (hexadecimal)
-    var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+    var randomColor= "#" + Math.floor(Math.random()*16777215).toString(16);
 
     //Set the button's background color to the random color
     button.style.backgroundColor = randomColor;
