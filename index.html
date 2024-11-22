@@ -68,7 +68,12 @@
  <tr>
    <td><a href="#Detecting dark energy">Detecting dark energy</td>
  </tr>
-    
+
+<tr>
+  <td><a href="#Conclusion">Conclusion</td>
+</tr>
+<tr>
+  
 <tr>
   <td><a href="#References">References</td>
 </tr>
@@ -336,9 +341,12 @@ document.getElementById("date&time").innerHTML = d;
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
+    const Abstractount = displayWordCount("Abstract_InText");
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const Howwasdarkmatterandenergydiscovered?Count = displayWordCount("How was dark matter and energy discovered?_InText");
-    const 
+    const HowwasdarkmatterandenergydiscoveredCount = displayWordCount("How was dark matter and energy discovered?_InText");
+    const DetectingdarkmatterCount = displayWordCount("Detecting dark matter_InText");
+    const DetectingdarkenergyCount = displayWordCount("Detecting dark energy_InText");
+    const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + AnalysisCount;
     // Display the total word count
