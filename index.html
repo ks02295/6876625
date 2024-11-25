@@ -232,7 +232,7 @@ document.getElementById("date&time").innerHTML = d;
     <button id="alertButton">Show Alert</button>
     
     <script>
-        // Get references tot the input field and button
+        // Get references to the input field and button
         var input = document.getElementById("textInput");
         var button = document.getElementById("alertButton"); 
 
@@ -253,7 +253,7 @@ document.getElementById("date&time").innerHTML = d;
     <title>Random Number Generator</title>
 </head>
 <body>
-    <button id="generatorButton">Generate Random Number</button>
+    <button id="generateButton">Generate Random Number</button>
     <p id="randomNumber"></p>
 
     <script>
@@ -263,8 +263,8 @@ document.getElementById("date&time").innerHTML = d;
 
        // Function to generate and display a random number 
       function generateRandomNumber() {
-          var randomNumber  = Math.floor(Math.random() * 10) +1;
-          paragraph.textContent = "RandomNumber: " + randomNumber;
+          var randomNumber  = Math.floor(Math.random() * 10) + 1;
+          paragraph.textContent = "Random Number: " + randomNumber;
       }
       // Add a click event listener to the button
       button.addEventListener("click", generateRandomNumber);
