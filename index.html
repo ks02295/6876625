@@ -387,14 +387,13 @@ document.getElementById("date&time").innerHTML = d;
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const Abstractount = displayWordCount("Abstract_InText");
     const IntroductionCount = displayWordCount("Introduction_InText");
     const HowwasdarkmatterandenergydiscoveredCount = displayWordCount("How was dark matter and energy discovered?_InText");
     const DetectingdarkmatterCount = displayWordCount("Detecting dark matter_InText");
     const DetectingdarkenergyCount = displayWordCount("Detecting dark energy_InText");
     const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = AbstractCount + IntroductionCount + HowwasdarkmatterandenergydiscoveredCount + DetectingdarkmatterCount + DetectingdarkenergyCount + ConclusionCount;
+    const totalWordCount = IntroductionCount + HowwasdarkmatterandenergydiscoveredCount + DetectingdarkmatterCount + DetectingdarkenergyCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
