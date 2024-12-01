@@ -230,3 +230,58 @@ function drawChart() {
   </script>
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hubble's constant Line Chart</title>
+    <!-- Include Google Charts API--> 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>   
+</head>
+<body> 
+    <!-- Create a div element to hold the chart -->
+    <div id="chart_div" style="width:1000px; height: 600px"></div>
+
+  <script>
+      // Load the corechart package and set a callback function 
+      google.charts.load('current', { 'packages': ['corechart'] });
+      google.chart.setOnLoadCallback(drawChart);
+
+      // Callback function to draw the line chart 
+      function drawChart() {
+        // Create a DataTable with columns for distance and velocity 
+        var data = new google.visualization.DataTable();
+        data.addColumn('number', 'Distance between galaxy and Earth (m)');
+        data.addColumn('number', 'Velocity of galaxy (ms^1)');
+
+        // Add data for each distance and velocity 
+        data.addRows([
+            [1000, 2.3*10^-15],
+            [2000, 4.6*10^-15],
+            [6000, 1.38*10^-14],
+            [100000, 2.3*10^-13],
+            [500000, 1.15*10^-12],
+            [1000000, 2.3*10^-12],
+            [10000000, 2.3*10^-11],
+            [50000000, 1.15*10^-10], 
+            [100000000, 2.3*10^-10],
+            [5000000000, 1.15*10^-8]
+        ]);
+
+        //Set chart options
+        var options = {
+            title: 'Velocity of galaxy depending on distance using Hubble's constant',
+            hAxis: { title: 'distance (m)' },
+            vAxis: { title: 'Velocity (ms^1)' }, 
+            color: ['#ff9900'], 
+            curveType: 'function', //Display lines smoothly
+            legend: { position: 'bottom' } //Display legend at bottom
+      };
+      // Create a line chart and place it in the 'chart_div' element
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }            
+  </script>
+</body>
+</html>
