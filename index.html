@@ -178,33 +178,6 @@ object is from Earth which is what Edward Hubble did in 1929 where nearly all th
 The velocity of a galaxy can be found by using the equation v = H x d where v = radial outward velocity, d = the distance between the galaxy and Earth, and H = contant of proportionality (Hubble’s constant) (The StarChild Team, NASA, no date)
 which is approimately  2.3 x 10^-18 s^-1 (BBC Bitesize, 2024). The values in the table and on the graph below shows how the velocity and the distance are directly proportional to each other.
 
-  <script type ="text/javascript">
-    function drawChart() {
-      var data = new google.visualization.DataTable();
-      data.addColumn('number', 'Distance (m)');
-      data.addColumn('number', 'Velocity (ms^-1)');
-
-      data.addRows([
-        [1000, 0.0000000000000023],
-        [2000, 0.0000000000000046],
-        [6000, 0.0000000000000138],
-        [100000, 0.00000000000023],
-        [500000, 0.00000000000115],
-        [1000000, 0.0000000000023],
-        [10000000, 0.000000000023],
-        [50000000, 0.000000000115], 
-        [100000000, 0.00000000023],
-        [5000000000, 0.0000000115]
-     ]);
-     var options = {
-       title: 'distance vs. velocity of galaxy',
-       hAxis:{title:'Distance (m)'},
-       vAxis:{title:'Velocity (ms^-1'}'
-     };
-     var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
-     chart.draw(data,options);
-    }
-  </script>
   
 Table 1: data on cost and lifespan of bridge repairs 
 <table> 
