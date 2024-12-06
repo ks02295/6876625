@@ -463,7 +463,7 @@ document.getElementById("date&time").innerHTML = d;
     const AnalysisCount = displayWordCount("Analysis_InText"); 
     const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + HowwasdarkmatterandenergydiscoveredCount + DetectingdarkmatterCount + DetectingdarkenergyCount + ConclusionCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
