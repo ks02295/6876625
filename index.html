@@ -159,7 +159,7 @@ some sort of dark energy that was accelerating the expansion of the universe <a 
   <body style="background-color:#FFFFFF;margin-left:50px;">
     <h3 id="Detecting dark matter">Detecting dark matter</h3> 
 
-<pre id="Analysis_InText" class="ex1"> 
+<pre id="Analysiss_InText" class="ex1"> 
 Dark matter can’t emit, absorb or reflect light, which is why it is so difficult for scientists to find dark matter
 in our universe. However, because dark matter interacts with gravity, we can look at its indirect effects on gravity 
 and how it affects other objects with mass and light <a href="https://www.space.com/if-dark-matter-invisible-how-do-we-know-it-exists">(Lea, 2023)</a>. One possible method of detecting dark matter is
@@ -182,7 +182,7 @@ Model particles. The Large Hadron Collider is currently conducting production ex
   <body style="background-color:#FFFFFF;margin-left:50px;">
     <h3 id="Detecting dark energy">Detecting dark energy</h3> 
 
-<pre id="Analysis_InText" class="ex1"> 
+<pre id="Analysisss_InText" class="ex1"> 
 There's no technology created so far to allow scientists to see and find dark energy in our universe, 
 however, scientists can observe distant galaxies to prove that our universe is rapidly accelerating because of the
 force given from dark energy that seems to drive it. An example is redshift. It means the change in the stretching of 
@@ -462,9 +462,11 @@ document.getElementById("date&time").innerHTML = d;
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisCount = displayWordCount("Analysis_InText"); 
+    const AnalysissCount = displayWordCount("Analysiss_InText"); 
+    const AnalysisssCount = displayWordCount("Analysisss_InText"); 
     const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + ConclusionCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + AnalysissCount + AnalysisssCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
